@@ -51,7 +51,13 @@
 
 	<ItemGroup>
 	  <None Remove="Resources\Fonts\Cinzel-VariableFont.ttf" />
+	  <None Remove="Resources\Fonts\MaterialIcons-Regular.ttf" />
 	  <None Remove="Resources\Fonts\Pacifico-Regular.ttf" />
+	  <None Remove="Resources\Images\a0a.jpeg" />
+	  <None Remove="Resources\Images\a1a.jpeg" />
+	  <None Remove="Resources\Images\a2a.jpeg" />
+	  <None Remove="Resources\Images\a3a.jpeg" />
+	  <None Remove="Resources\Images\a4a.jpeg" />
 	  <None Remove="Resources\Splash\logo.svg" />
 	</ItemGroup>
 
