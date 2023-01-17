@@ -59,6 +59,7 @@
 	  <None Remove="Resources\Images\a3a.jpeg" />
 	  <None Remove="Resources\Images\a4a.jpeg" />
 	  <None Remove="Resources\Splash\logo.svg" />
+	<MauiImage Update="Resources\Images\*.gif" Resize="False" />
 	</ItemGroup>
 
 	
