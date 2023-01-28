@@ -13,6 +13,7 @@ public static class MauiProgram
 				fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
                 fonts.AddFont("Pacifico-Regular.ttf", "Pacifico");
                 fonts.AddFont("Cinzel-VariableFont_wght.ttf", "Cinzel");
+				fonts.AddFont("MaterialIcons-Regular.ttf", "MaterialIcons");
 				
 			});
 

@@ -1,9 +1,59 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="StartWithMaui.MainPage" >
+<ContentPage
+    x:Class="StartWithMaui.MainPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
 
- 
+
+    <VerticalStackLayout Margin="35" Spacing="30">
+
+        <Button
+            x:Name="up_btn"
+            BorderColor="Brown"
+            BorderWidth="3"
+            Clicked="Button_Clicked"
+            CornerRadius="40"
+            HeightRequest="80"
+            WidthRequest="80">
+            <Button.ImageSource>
+                <FontImageSource FontFamily="MaterialIcons" Glyph="&#xe5d8;" />
+            </Button.ImageSource>
+            <Button.Shadow>
+                <Shadow
+                    Brush="Black"
+                    Opacity="0.8"
+                    Radius="40"
+                    Offset="20,20" />
+            </Button.Shadow>
+
+        </Button>
+
+
+        <Image
+            x:Name="slide_img"
+            Aspect="AspectFit"
+            HeightRequest="240"
+            Source="dotnet_bot.svg"
+            WidthRequest="240" />
+
+        <Button
+            x:Name="down_btn"
+            BorderColor="Brown"
+            BorderWidth="3"
+            Clicked="Button_Clicked"
+            CornerRadius="40"
+            FontAttributes="Bold"
+            FontFamily="Cinzel"
+            FontSize="Medium"
+            HeightRequest="80"
+            IsEnabled="False"
+            Text="Down"
+            TextColor="White"
+            WidthRequest="80" />
+
+
+    </VerticalStackLayout>
+
 
 
 
