@@ -14,7 +14,21 @@ public partial class MainPage : ContentPage
 		imagesUrl.Add("https://img.freepik.com/free-psd/blue-cube-with-questionmark-sign-boxes_47987-7785.jpg");
 	}
 
+	private void ButtonEnabled()
+	{
+        if (current <= 0)
+            down_btn.IsEnabled = false;
+        else if (current >= imagesUrl.Count - 1)
+        {
+            up_btn.IsEnabled = false;
+        }
+        else
+        {
+            up_btn.IsEnabled = true;
+            down_btn.IsEnabled = true;
 
+        }
+    }
 	private void ChangePhoto(object sender, EventArgs e)
 	{
 		Button btn = sender as Button;//נמיר את האובייקט לכפתור שהפעיל את האירוע
@@ -28,20 +42,9 @@ public partial class MainPage : ContentPage
 				current = current - 1;
 
 			slide_img.Source = imagesUrl[current];
-        
 
-		if (current <= 0)
-            down_btn.IsEnabled = false;
-       else if (current >= imagesUrl.Count-1)
-        {
-            up_btn.IsEnabled = false;
-        }
-        else
-        {
-            up_btn.IsEnabled = true;
-            down_btn.IsEnabled = true;
-
-        }
+		ButtonEnabled();
+		
 
 
 
