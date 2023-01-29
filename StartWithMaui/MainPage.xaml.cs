@@ -15,7 +15,7 @@ public partial class MainPage : ContentPage
 	}
 
 
-	private void Button_Clicked(object sender, EventArgs e)
+	private void ChangePhoto(object sender, EventArgs e)
 	{
 		Button btn = sender as Button;//נמיר את האובייקט לכפתור שהפעיל את האירוע
 			
@@ -32,7 +32,7 @@ public partial class MainPage : ContentPage
 
 		if (current <= 0)
             down_btn.IsEnabled = false;
-        if (current >= imagesUrl.Count-1)
+       else if (current >= imagesUrl.Count-1)
         {
             up_btn.IsEnabled = false;
         }

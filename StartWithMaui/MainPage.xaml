@@ -11,7 +11,7 @@
             x:Name="up_btn"
             BorderColor="Brown"
             BorderWidth="3"
-            Clicked="Button_Clicked"
+            Clicked="ChangePhoto"
             CornerRadius="40"
             HeightRequest="80"
             WidthRequest="80">
@@ -40,7 +40,7 @@
             x:Name="down_btn"
             BorderColor="Brown"
             BorderWidth="3"
-            Clicked="Button_Clicked"
+            Clicked="ChangePhoto"
             CornerRadius="40"
             FontAttributes="Bold"
             FontFamily="Cinzel"
